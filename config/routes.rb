@@ -1,4 +1,6 @@
 PredictionLog::Application.routes.draw do
+  resources :votes
+
   resources :predictions
 
   match '/auth/:service/callback' => 'services#create', via: %i(get post)

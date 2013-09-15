@@ -20,6 +20,8 @@
         <td><%= prediction.prediction %></td>
         <td><%= prediction.pdate %></td>
         <td><%= prediction.time %></td>
+        <td><%= pluralize(prediction.votes.count, "vote") %></td>
+        <td><%= button_to '+1', votes_path(prediction_id: prediction.id), method: :post %></td>
         <td><%= link_to 'Show', prediction %></td>
         <td><%= link_to 'Edit', edit_prediction_path(prediction) %></td>
         <td><%= link_to 'Destroy', prediction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
