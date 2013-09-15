@@ -10,6 +10,7 @@ gem 'unicorn'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
+gem 'omniauth-facebook'
 
 # Multi-environment configuration
 # gem 'simpleconfig'
