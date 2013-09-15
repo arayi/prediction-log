@@ -2,10 +2,23 @@
   <div class='navbar-inner'>
     <div class='container'>
       <%= link_to Rails.application.class.parent_name, root_path, class: 'brand' %>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Science/Tech</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      <div class="navbar-text pull-right">
       <% if logged_in? %>
-        <div class="navbar-text pull-right">Hi, <%= current_user.name %>!</div>
-        <%= link_to t('auth.logout'), logout_path, class: 'brand', style: "color: blue" %>
-      <% else %><div class="pull-right"><%= link_to t('auth.login'), login_path, class: 'brand', style: "color: blue" %></div>
+        Hi, <%= current_user.name %>!
+        <button type="button" class="btn btn-primary btn-sm"><%= link_to t('auth.logout'), logout_path, class: 'brand', style: "color: blue" %></button>
+      <% else %><button type="button" class="btn btn-primary btn-sm"><%= link_to t('auth.login'), login_path, class: 'brand', style: "color: blue" %></button></div>
       <% end %>
     </div>
   </div>
