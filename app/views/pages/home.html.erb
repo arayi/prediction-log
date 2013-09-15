@@ -1,15 +1,17 @@
 <%= title t('hello') %>
+<br>
+<br>
 <p>
 <div class="jumbotron">
 	<% if logged_in? %>
 		<h1>Make a prediction!</h1>
-    	<p>This is where the prediction box will go. For now, click the button to create a prediction.</p>
+    	<p class="lead">This is where the prediction box will go. For now, click the button to create a prediction.</p>
     	<p>
     		<%= link_to "Make a prediction, " + current_user.name + "!", predictions_path, class: 'btn btn-lg btn-primary' %>
     	</p>
     <% else %>
     	<h1>Log in to make a prediction!</h1>
-    	<p>This is where the prediction box will go. For now, log in to create a prediction.</p>
+    	<p class="lead">This is where the prediction box will go. For now, log in to create a prediction.</p>
     	<p>
     		<%= link_to t('auth.login'), login_path, class: 'btn btn-primary', style: "color: blue" %>
     	</p>
