@@ -53,6 +53,6 @@ class PredictionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def prediction_params
-      params.require(:prediction).permit(:user, :guess, :pdate, :time)
+      params.require(:prediction).permit(:user, :prediction, :pdate, :time)
     end
 end
