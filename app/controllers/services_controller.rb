@@ -72,6 +72,6 @@ class ServicesController < ApplicationController
   end
 
   def redirect_path
-    :services
+    :home
   end
 end
