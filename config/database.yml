@@ -43,7 +43,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: starterapp_test
+  database: PredictionLog_test
   pool: 5
   username: postgres
   password:
@@ -51,7 +51,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: starterapp_production
+  database: PredictionLog_production
   pool: 5
   username: postgres
   password:

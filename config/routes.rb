@@ -1,4 +1,4 @@
-Starterapp::Application.routes.draw do
+PredictionLog::Application.routes.draw do
   match '/auth/:service/callback' => 'services#create', via: %i(get post)
   match '/auth/failure' => 'services#failure', via: %i(get post)
   match '/logout' => 'sessions#destroy', via: %i(get delete), as: :logout
