@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user %><br>
-    <%= f.text_field :user %>
+    <%= :user = current_user.name %>
+    <%= f.label "{:user} predicts that..." %><br>
   </div>
   <div class="field">
     <%= f.label :prediction %><br>
