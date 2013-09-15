@@ -5,7 +5,7 @@
 		<h1>Make a prediction!</h1>
     	<p>This is where the prediction box will go. For now, click the button to create a prediction.</p>
     	<p>
-    		<%= link_to "Make a prediction, {current_user.name}!", predictions_path, class: 'btn btn-lg btn-primary' %>
+    		<%= link_to "Make a prediction, " + current_user.name + "!", predictions_path, class: 'btn btn-lg btn-primary' %>
     	</p>
     <% else %>
     	<h1>Log in to make a prediction!</h1>
