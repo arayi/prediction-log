@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 gem 'puma'
 gem 'unicorn'
 
+# authentication & key security
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
