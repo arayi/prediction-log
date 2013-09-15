@@ -20,9 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Prediction Log (beta version)"
   app:
-    title: "Omniauth Rails (codecase)"
+    title: "Prediction Log"
     subtitle: "Example of OmniAuth implementations in Ruby on Rails 4."
   auth:
     twitter_html: "Login with <strong>Twitter</strong>"
