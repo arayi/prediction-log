@@ -46,7 +46,7 @@ class ServicesController < ApplicationController
       end
     end
 
-    redirect_to services_path
+    redirect_to root_url
   end
 
   def destroy
